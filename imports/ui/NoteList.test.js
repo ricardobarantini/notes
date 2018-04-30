@@ -6,23 +6,8 @@ import { mount } from 'enzyme';
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-15';
 
+import { notes } from '../fixtures/fixtures';
 import { NoteList } from './NoteList';
-
-const notes = [
-  {
-    _id: 'noteId1',
-    title: 'Title 1',
-    body: '',
-    updatedAt: 0,
-    userId: 'userId1'
-  }, {
-    _id: 'noteId2',
-    title: '',
-    body: 'Body here',
-    updatedAt: 0,
-    userId: 'userId2'
-  }
-];
 
 if (Meteor.isClient) {
   describe('NoteList', function () {
